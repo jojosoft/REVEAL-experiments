@@ -1,0 +1,122 @@
+[
+  {
+    "id": "welcome_participant",
+    "commands": [
+      {
+        "time": 0.0,
+        "cmd": "play_sound",
+        "id": "narr/Preparation_Welcome",
+        "is_narrative": true
+      },
+      {
+        "comment": "[HACK] This dummy command indicates how long the audio plays.",
+		"cmd": "fade_screen",
+        "time": 13.0,
+        "duration": 0.0,
+        "from": 0.0,
+        "to": 0.0
+      }
+    ]
+  },
+  {
+    "id": "check_joysticks",
+    "commands": [
+      {
+        "time": 0.0,
+        "cmd": "play_sound",
+        "id": "narr/Preparation_JoysticksCheck",
+        "is_narrative": true
+      },
+      {
+        "comment": "[HACK] This dummy command indicates how long the audio plays.",
+		"cmd": "fade_screen",
+        "time": 6.0,
+        "duration": 0.0,
+        "from": 0.0,
+        "to": 0.0
+      }
+    ]
+  },
+  {
+    "id": "bridge_to_presence_explanation",
+    "commands": [
+      {
+        "time": 0.0,
+        "cmd": "play_sound",
+        "id": "narr/Preparation_OneMoreThing",
+        "is_narrative": true
+      },
+      {
+        "comment": "[HACK] This dummy command indicates how long the audio plays.",
+		"cmd": "fade_screen",
+        "time": 6.0,
+        "duration": 0.0,
+        "from": 0.0,
+        "to": 0.0
+      }
+    ]
+  },
+  {
+    "id": "explain_presence",
+    "commands": [
+      {
+        "time": 0.0,
+        "cmd": "play_sound",
+        "id": "narr/Preparation_PresenceExplanation",
+        "is_narrative": true
+      },
+      {
+        "comment": "[HACK] This dummy command indicates how long the audio plays.",
+		"cmd": "fade_screen",
+        "time": 37.0,
+        "duration": 0.0,
+        "from": 0.0,
+        "to": 0.0
+      }
+    ]
+  },
+  {
+    "id": "measure_presence_baseline",
+    "commands": [
+      {
+        "time": 0.0,
+        "cmd": "play_commands",
+        "id": "experiment_take_presence_measure"
+      },
+      {
+        "comment": "[HACK] This dummy command indicates how long the audio plays.",
+		"cmd": "fade_screen",
+        "time": 8.0,
+        "duration": 0.0,
+        "from": 0.0,
+        "to": 0.0
+      }
+    ]
+  },
+  {
+    "id": "preparation_wait",
+    "commands": [
+      {
+        "comment": "This dummy command defines after which amount of time the current instruction should be repeated.",
+		"cmd": "fade_screen",
+        "time": 10.0,
+        "duration": 0.0,
+        "from": 0.0,
+        "to": 0.0
+      }
+    ]
+  },
+  {
+    "id": "end_fade",
+    "commands": [
+      {
+        "comment": "This command is used by the experiment state for the final fadeout.",
+		"cmd": "fade_screen",
+        "time": 0.0,
+        "duration": 3.0,
+        "from": 0.0,
+        "to": 1.0
+      }
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+{
+	"undefinedValue": "NA",
+	"conditions": [
+		{
+			"name": "phase",
+			"value": 0,
+			"comment": "This is an example condition."
+		}
+	],
+	"triggers": [
+		{
+			"name": "ChooseConfiguration",
+			"commandBlocks": [
+				"experiment_movement_enable",
+				"experiment_movement_disable"
+			],
+			"participantRotateInterval": 1
+		}
+	],
+	"plugins": [
+		{
+			"name": "controller",
+			"recordMovementFlag": true
+		},
+		{
+			"name": "HMD",
+			"recordIntervalSeconds": 0.04,
+			"autoStart": false
+		},
+		{
+			"name": "locomotion"
+		},
+		{
+			"name": "activity"
+		},
+		{
+			"name": "voice"
+		},
+		{
+			"name": "hands",
+			"recordIntervalSeconds": 0.04,
+			"autoStart": false
+		},
+		{
+			"name": "collectionCounter",
+			"commandBlocks": [
+				"collection1_block",
+				"collection2_block",
+				"collection3_block"
+			],
+			"onlyInventoryItems": true
+		}
+	],
+	"enableAudioRecording": true
+}

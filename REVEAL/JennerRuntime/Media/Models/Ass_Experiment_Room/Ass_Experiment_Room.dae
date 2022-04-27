@@ -1,0 +1,708 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Johannes</author>
+      <authoring_tool>Maya2018 | ColladaMaya v3.04C PhyreEngine(TM) 3.21.0.0</authoring_tool>
+      <comments>Collada Maya Export Options: bakeTransforms=1;exportPolygonMeshes=1;relativePaths=1;bakeLighting=0;isSampling=1;
+curveConstrainSampling=0;removeStaticCurves=0;exportCameraAsLookat=0;
+exportLights=0;exportCameras=0;exportDefaultCameras=0;exportJointsAndSkin=0;
+exportAnimations=0;exportTriangles=0;exportInvisibleNodes=0;
+exportNormals=1;exportTexCoords=1;
+exportVertexColors=0;exportVertexColorsAnimation=0;exportTangents=0;
+exportTexTangents=0;exportConstraints=0;exportPhysics=0;exportXRefs=1;instanceDuplicateCurves=0;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=1;
+animationTime=0.041667</comments>
+      <source_data>file:///C:/Users/Johannes/Documents/REVEAL/REVEAL/JennerRuntime/Media/Models/Ass_Experiment_Room/Ass_Experiment_Room.mb</source_data>
+    </contributor>
+    <created>2018-08-22T18:23:45Z</created>
+    <modified>2018-08-22T18:23:46Z</modified>
+    <unit meter="0.0099999997764825" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_images>
+    <image id="file1" name="file1">
+      <init_from>./Grid.dds</init_from>
+      <extra>
+        <technique profile="MAYA">
+          <dgnode_type>kFile</dgnode_type>
+          <image_sequence>0</image_sequence>
+        </technique>
+      </extra>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="Room1" name="Room1">
+      <instance_effect url="#Room1-fx">
+        <technique_hint platform="PC-DX" ref="ForwardRender"/>
+        <setparam ref="Room1World">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1WorldView">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1WorldInverse">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1WorldViewProjection">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1WorldViewProjectionPrev">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1WorldViewInverse">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1GlobalAmbientColor">
+          <float4>0 0 0 0</float4>
+        </setparam>
+        <setparam ref="Room1MaterialColour">
+          <float4>1 1 1 1</float4>
+        </setparam>
+        <setparam ref="Room1MaterialDiffuse">
+          <float>1</float>
+        </setparam>
+        <setparam ref="Room1MaterialEmissiveness">
+          <float>0</float>
+        </setparam>
+        <setparam ref="Room1SoftDepthScale">
+          <float>0.8999999761581421</float>
+        </setparam>
+        <setparam ref="Room1ViewProjection">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1ViewProjectionPrev">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1View">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1Projection">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1ViewInverse">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1ProjInverse">
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </setparam>
+        <setparam ref="Room1EyePosition">
+          <float3>0 0 3</float3>
+        </setparam>
+        <setparam ref="Room1cameraNearTimesFar">
+          <float>0</float>
+        </setparam>
+        <setparam ref="Room1cameraFarMinusNear">
+          <float>0</float>
+        </setparam>
+        <setparam ref="Room1time">
+          <float>0</float>
+        </setparam>
+        <setparam ref="Room1cameraNearFar">
+          <float2>0 0</float2>
+        </setparam>
+        <setparam ref="Room1ViewportWidthHeight">
+          <float2>0 0</float2>
+        </setparam>
+        <setparam ref="Room1screenWidthHeightInv">
+          <float2>0 0</float2>
+        </setparam>
+        <setparam ref="Room1screenWidthHeight">
+          <float2>0 0</float2>
+        </setparam>
+        <setparam ref="Room1ProjectionJitter">
+          <float2>0 0</float2>
+        </setparam>
+        <setparam ref="Room1ProjectionJitterPrev">
+          <float2>0 0</float2>
+        </setparam>
+        <setparam ref="Room1m_pad">
+          <float>0</float>
+        </setparam>
+        <setparam ref="Room1TextureSampler">
+          <sampler2D>
+            <source>file1Surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+            <max_anisotropy>0</max_anisotropy>
+          </sampler2D>
+        </setparam>
+        <setparam ref="file1Surface">
+          <surface type="2D">
+            <init_from mip="0" slice="0">file1</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </setparam>
+      </instance_effect>
+      <extra>
+        <technique profile="PHYRE">
+          <material_switches>
+            <LIGHTING_ENABLED/>
+            <TEXTURE_ENABLED/>
+            <RECEIVE_SHADOWS/>
+          </material_switches>
+          <material_switch_list>
+            <material_switch name="LAYERED_TEXTURE_MODE_OVER_NONE_ENABLED" material_switch_value="0"/>
+            <material_switch name="MULTIPLE_UVS_ENABLED" material_switch_value="0"/>
+            <material_switch name="VERTEX_COLOR_ENABLED" material_switch_value="0"/>
+            <material_switch name="LIGHTING_ENABLED" material_switch_value="1"/>
+            <material_switch name="TEXTURE_ENABLED" material_switch_value="1"/>
+            <material_switch name="ALPHA_ENABLED" material_switch_value="0"/>
+            <material_switch name="NORMAL_MAPPING_ENABLED" material_switch_value="0"/>
+            <material_switch name="WRAP_DIFFUSE_LIGHTING" material_switch_value="0"/>
+            <material_switch name="SPECULAR_ENABLED" material_switch_value="0"/>
+            <material_switch name="CASTS_SHADOWS" material_switch_value="0"/>
+            <material_switch name="RECEIVE_SHADOWS" material_switch_value="1"/>
+            <material_switch name="DOUBLE_SIDED" material_switch_value="0"/>
+            <material_switch name="MOTION_BLUR_ENABLED" material_switch_value="0"/>
+            <material_switch name="GENERATE_LIGHTS" material_switch_value="0"/>
+            <material_switch name="CEL_ENABLED" material_switch_value="0"/>
+            <material_switch name="RENDER_AS_LOW_RES" material_switch_value="0"/>
+            <material_switch name="LIGHTMAP_OCCLUSION" material_switch_value="0"/>
+            <material_switch name="SUBDIV" material_switch_value="0"/>
+            <material_switch name="SUBDIV_SCALAR_DISPLACEMENT" material_switch_value="0"/>
+            <material_switch name="SUBDIV_VECTOR_DISPLACEMENT" material_switch_value="0"/>
+          </material_switch_list>
+        </technique>
+      </extra>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="Room1-fx">
+      <profile_HLSL platform="PC-DX">
+        <include sid="include" url="../../Shaders/PhyreDefaultLitShader.fx"/>
+        <newparam sid="Room1World">
+          <semantic>World</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1WorldView">
+          <semantic>WorldView</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1WorldInverse">
+          <semantic>WorldInverse</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1WorldViewProjection">
+          <semantic>WorldViewProjection</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1WorldViewProjectionPrev">
+          <semantic>WorldViewProjection</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1WorldViewInverse">
+          <semantic>WorldViewInverse</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1GlobalAmbientColor">
+          <annotate name="UIName">
+            <string>GlobalAmbientColor</string>
+          </annotate>
+          <annotate name="UIType">
+            <string>Color</string>
+          </annotate>
+          <float4>0 0 0 0</float4>
+        </newparam>
+        <newparam sid="Room1MaterialColour">
+          <annotate name="UIName">
+            <string>MaterialColour</string>
+          </annotate>
+          <annotate name="UIType">
+            <string>Color</string>
+          </annotate>
+          <semantic>MaterialColour</semantic>
+          <float4>1 1 1 1</float4>
+        </newparam>
+        <newparam sid="Room1MaterialDiffuse">
+          <annotate name="UIName">
+            <string>MaterialDiffuse</string>
+          </annotate>
+          <annotate name="UIMin">
+            <float>0</float>
+          </annotate>
+          <annotate name="UIMax">
+            <float>1</float>
+          </annotate>
+          <semantic>MaterialDiffuse</semantic>
+          <float>1</float>
+        </newparam>
+        <newparam sid="Room1MaterialEmissiveness">
+          <annotate name="UIName">
+            <string>MaterialEmissiveness</string>
+          </annotate>
+          <annotate name="UIMin">
+            <float>0</float>
+          </annotate>
+          <annotate name="UIMax">
+            <float>1</float>
+          </annotate>
+          <semantic>MaterialEmissiveness</semantic>
+          <float>0</float>
+        </newparam>
+        <newparam sid="Room1SoftDepthScale">
+          <annotate name="UIName">
+            <string>SoftDepthScale</string>
+          </annotate>
+          <annotate name="UIMin">
+            <float>0.0000999999974737</float>
+          </annotate>
+          <annotate name="UIMax">
+            <float>1</float>
+          </annotate>
+          <float>0.8999999761581421</float>
+        </newparam>
+        <newparam sid="Room1ViewProjection">
+          <semantic>ViewProjection</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1ViewProjectionPrev">
+          <semantic>ViewProjection</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1View">
+          <semantic>View</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1Projection">
+          <semantic>Projection</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1ViewInverse">
+          <semantic>ViewInverse</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1ProjInverse">
+          <semantic>ProjectionInverse</semantic>
+          <float4x4>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</float4x4>
+        </newparam>
+        <newparam sid="Room1EyePosition">
+          <annotate name="UIName">
+            <string>EyePosition</string>
+          </annotate>
+          <annotate name="UIType">
+            <string>Color</string>
+          </annotate>
+          <float3>0 0 3</float3>
+        </newparam>
+        <newparam sid="Room1cameraNearTimesFar">
+          <annotate name="UIName">
+            <string>cameraNearTimesFar</string>
+          </annotate>
+          <annotate name="UIMin">
+            <float>0</float>
+          </annotate>
+          <annotate name="UIMax">
+            <float>1</float>
+          </annotate>
+          <float>0</float>
+        </newparam>
+        <newparam sid="Room1cameraFarMinusNear">
+          <annotate name="UIName">
+            <string>cameraFarMinusNear</string>
+          </annotate>
+          <annotate name="UIMin">
+            <float>0</float>
+          </annotate>
+          <annotate name="UIMax">
+            <float>1</float>
+          </annotate>
+          <float>0</float>
+        </newparam>
+        <newparam sid="Room1time">
+          <annotate name="UIName">
+            <string>time</string>
+          </annotate>
+          <annotate name="UIMin">
+            <float>0</float>
+          </annotate>
+          <annotate name="UIMax">
+            <float>1</float>
+          </annotate>
+          <float>0</float>
+        </newparam>
+        <newparam sid="Room1cameraNearFar">
+          <annotate name="UIName">
+            <string>cameraNearFar</string>
+          </annotate>
+          <float2>0 0</float2>
+        </newparam>
+        <newparam sid="Room1ViewportWidthHeight">
+          <annotate name="UIName">
+            <string>ViewportWidthHeight</string>
+          </annotate>
+          <float2>0 0</float2>
+        </newparam>
+        <newparam sid="Room1screenWidthHeightInv">
+          <annotate name="UIName">
+            <string>screenWidthHeightInv</string>
+          </annotate>
+          <float2>0 0</float2>
+        </newparam>
+        <newparam sid="Room1screenWidthHeight">
+          <annotate name="UIName">
+            <string>screenWidthHeight</string>
+          </annotate>
+          <float2>0 0</float2>
+        </newparam>
+        <newparam sid="Room1ProjectionJitter">
+          <annotate name="UIName">
+            <string>ProjectionJitter</string>
+          </annotate>
+          <float2>0 0</float2>
+        </newparam>
+        <newparam sid="Room1ProjectionJitterPrev">
+          <annotate name="UIName">
+            <string>ProjectionJitterPrev</string>
+          </annotate>
+          <float2>0 0</float2>
+        </newparam>
+        <newparam sid="Room1m_pad">
+          <annotate name="UIName">
+            <string>m_pad</string>
+          </annotate>
+          <annotate name="UIMin">
+            <float>0</float>
+          </annotate>
+          <annotate name="UIMax">
+            <float>1</float>
+          </annotate>
+          <float>0</float>
+        </newparam>
+        <newparam sid="ShadowMapSampler">
+          <samplerDX>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <wrap_p>CLAMP</wrap_p>
+            <dxfilter>COMPARISON_MIN_MAG_LINEAR_MIP_POINT</dxfilter>
+            <func>LESS</func>
+            <max_anisotropy>0</max_anisotropy>
+            <lod_min_distance>-3402823466385289</lod_min_distance>
+            <lod_max_distance>3402823466385289</lod_max_distance>
+            <border_color>0 0 0 0</border_color>
+          </samplerDX>
+        </newparam>
+        <newparam sid="Room1TextureSampler">
+          <annotate name="UIName">
+            <string>TextureSampler</string>
+          </annotate>
+          <sampler2D>
+            <source>file1Surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NONE</minfilter>
+            <magfilter>NONE</magfilter>
+            <mipfilter>NONE</mipfilter>
+            <max_anisotropy>0</max_anisotropy>
+          </sampler2D>
+        </newparam>
+        <newparam sid="file1Surface">
+          <annotate name="UIName">
+            <string>file1</string>
+          </annotate>
+          <surface type="2D">
+            <init_from mip="0" slice="0">file1</init_from>
+            <format>A8R8G8B8</format>
+          </surface>
+        </newparam>
+        <newparam sid="TextureSamplerSampler">
+          <samplerDX>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <wrap_p>CLAMP</wrap_p>
+            <dxfilter>MIN_MAG_MIP_LINEAR</dxfilter>
+            <func>NEVER</func>
+            <max_anisotropy>0</max_anisotropy>
+            <lod_min_distance>-3402823466385289</lod_min_distance>
+            <lod_max_distance>3402823466385289</lod_max_distance>
+            <border_color>0 0 0 0</border_color>
+          </samplerDX>
+        </newparam>
+        <newparam sid="LinearWrapSampler">
+          <samplerDX>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <wrap_p>CLAMP</wrap_p>
+            <dxfilter>MIN_MAG_MIP_LINEAR</dxfilter>
+            <func>NEVER</func>
+            <max_anisotropy>0</max_anisotropy>
+            <lod_min_distance>-3402823466385289</lod_min_distance>
+            <lod_max_distance>3402823466385289</lod_max_distance>
+            <border_color>0 0 0 0</border_color>
+          </samplerDX>
+        </newparam>
+        <newparam sid="DitherSampler">
+          <samplerDX>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <wrap_p>CLAMP</wrap_p>
+            <dxfilter>MIN_MAG_POINT_MIP_LINEAR</dxfilter>
+            <func>NEVER</func>
+            <max_anisotropy>0</max_anisotropy>
+            <lod_min_distance>-3402823466385289</lod_min_distance>
+            <lod_max_distance>3402823466385289</lod_max_distance>
+            <border_color>0 0 0 0</border_color>
+          </samplerDX>
+        </newparam>
+        <newparam sid="PointClampSampler">
+          <samplerDX>
+            <wrap_s>CLAMP</wrap_s>
+            <wrap_t>CLAMP</wrap_t>
+            <wrap_p>CLAMP</wrap_p>
+            <dxfilter>MIN_MAG_MIP_POINT</dxfilter>
+            <func>NEVER</func>
+            <max_anisotropy>0</max_anisotropy>
+            <lod_min_distance>-3402823466385289</lod_min_distance>
+            <lod_max_distance>3402823466385289</lod_max_distance>
+            <border_color>0 0 0 0</border_color>
+          </samplerDX>
+        </newparam>
+        <technique sid="ForwardRender">
+          <pass>
+            <shader stage="VERTEX">
+              <bind symbol="World">
+                <param ref="Room1World"/>
+              </bind>
+              <bind symbol="WorldView">
+                <param ref="Room1WorldView"/>
+              </bind>
+              <bind symbol="WorldInverse">
+                <param ref="Room1WorldInverse"/>
+              </bind>
+              <bind symbol="WorldViewProjection">
+                <param ref="Room1WorldViewProjection"/>
+              </bind>
+              <bind symbol="WorldViewProjectionPrev">
+                <param ref="Room1WorldViewProjectionPrev"/>
+              </bind>
+              <bind symbol="WorldViewInverse">
+                <param ref="Room1WorldViewInverse"/>
+              </bind>
+              <bind symbol="GlobalAmbientColor">
+                <param ref="Room1GlobalAmbientColor"/>
+              </bind>
+              <bind symbol="MaterialColour">
+                <param ref="Room1MaterialColour"/>
+              </bind>
+              <bind symbol="MaterialDiffuse">
+                <param ref="Room1MaterialDiffuse"/>
+              </bind>
+              <bind symbol="MaterialEmissiveness">
+                <param ref="Room1MaterialEmissiveness"/>
+              </bind>
+              <bind symbol="SoftDepthScale">
+                <param ref="Room1SoftDepthScale"/>
+              </bind>
+              <bind symbol="ViewProjection">
+                <param ref="Room1ViewProjection"/>
+              </bind>
+              <bind symbol="ViewProjectionPrev">
+                <param ref="Room1ViewProjectionPrev"/>
+              </bind>
+              <bind symbol="View">
+                <param ref="Room1View"/>
+              </bind>
+              <bind symbol="Projection">
+                <param ref="Room1Projection"/>
+              </bind>
+              <bind symbol="ViewInverse">
+                <param ref="Room1ViewInverse"/>
+              </bind>
+              <bind symbol="ProjInverse">
+                <param ref="Room1ProjInverse"/>
+              </bind>
+              <bind symbol="EyePosition">
+                <param ref="Room1EyePosition"/>
+              </bind>
+              <bind symbol="cameraNearTimesFar">
+                <param ref="Room1cameraNearTimesFar"/>
+              </bind>
+              <bind symbol="cameraFarMinusNear">
+                <param ref="Room1cameraFarMinusNear"/>
+              </bind>
+              <bind symbol="time">
+                <param ref="Room1time"/>
+              </bind>
+              <bind symbol="cameraNearFar">
+                <param ref="Room1cameraNearFar"/>
+              </bind>
+              <bind symbol="ViewportWidthHeight">
+                <param ref="Room1ViewportWidthHeight"/>
+              </bind>
+              <bind symbol="screenWidthHeightInv">
+                <param ref="Room1screenWidthHeightInv"/>
+              </bind>
+              <bind symbol="screenWidthHeight">
+                <param ref="Room1screenWidthHeight"/>
+              </bind>
+              <bind symbol="ProjectionJitter">
+                <param ref="Room1ProjectionJitter"/>
+              </bind>
+              <bind symbol="ProjectionJitterPrev">
+                <param ref="Room1ProjectionJitterPrev"/>
+              </bind>
+              <bind symbol="checkerBoardID">
+                <param ref="Room1checkerBoardID"/>
+              </bind>
+              <bind symbol="m_pad">
+                <param ref="Room1m_pad"/>
+              </bind>
+              <bind symbol="DitherNoiseTexture">
+                <param ref="Room1DitherNoiseTexture"/>
+              </bind>
+              <bind symbol="LowResDepthTexture">
+                <param ref="Room1LowResDepthTexture"/>
+              </bind>
+              <bind symbol="ShadowMapSampler">
+                <param ref="Room1ShadowMapSampler"/>
+              </bind>
+              <bind symbol="TextureSampler">
+                <param ref="Room1TextureSampler"/>
+              </bind>
+              <bind symbol="TextureSamplerSampler">
+                <param ref="Room1TextureSamplerSampler"/>
+              </bind>
+              <bind symbol="LinearWrapSampler">
+                <param ref="Room1LinearWrapSampler"/>
+              </bind>
+              <bind symbol="DitherSampler">
+                <param ref="Room1DitherSampler"/>
+              </bind>
+              <bind symbol="PointClampSampler">
+                <param ref="Room1PointClampSampler"/>
+              </bind>
+            </shader>
+          </pass>
+        </technique>
+      </profile_HLSL>
+      <extra>
+        <technique profile="PHYRE">
+          <context_switches>
+            <context_switch name="NUM_LIGHTS"/>
+            <context_switch name="LOD_BLEND"/>
+            <context_switch name="INSTANCING_ENABLED"/>
+            <context_switch name="INDICES_16BIT"/>
+            <context_switch name="LOW_RES_PARTICLES"/>
+            <context_switch name="VELOCITY_ENABLED"/>
+            <context_switch name="MULTISLICE_VR"/>
+            <supported_lights max_light_count="3">
+              <supported_light_type>DirectionalLight</supported_light_type>
+              <supported_light_type>PointLight</supported_light_type>
+              <supported_light_type>SpotLight</supported_light_type>
+            </supported_lights>
+            <supported_shadows>
+              <supported_shadow_type>PCFShadowMap</supported_shadow_type>
+              <supported_shadow_type>CascadedShadowMap</supported_shadow_type>
+              <supported_shadow_type>CombinedCascadedShadowMap</supported_shadow_type>
+            </supported_shadows>
+          </context_switches>
+        </technique>
+      </extra>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="RoomShape" name="RoomShape">
+      <mesh>
+        <source id="RoomShape-positions" name="position">
+          <float_array id="RoomShape-positions-array" count="24">-3.5 -1.5 3.5 3.5 -1.5 3.5 -3.5 1.50000011920929 3.5 3.5 1.50000011920929 3.5 -3.5 1.50000011920929 -3.5 3.5 1.50000011920929 -3.5 -3.5 -1.5 -3.5 3.5 -1.5 -3.5</float_array>
+          <technique_common>
+            <accessor source="#RoomShape-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="RoomShape-normals" name="normal">
+          <float_array id="RoomShape-normals-array" count="72">0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#RoomShape-normals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="RoomShape-map1" name="map1">
+          <float_array id="RoomShape-map1-array" count="48">0.5023067593574524 0.9584180116653442 0.9308782815933228 0.9584180116653442 0.9308782815933228 1.958418011665344 0.5023067593574524 1.958418011665344 0.0024155043065547 1.043156027793884 0.4309869706630707 1.043156027793884 0.4309869706630707 2.043156147003174 0.0024155043065547 2.043156147003174 0.4507180750370026 0.9430115818977356 0.4507180750370026 -0.0569883584976196 1.450717687606812 -0.0569883584976196 1.450717687606812 0.9430115818977356 0.9504409432411194 2.058367729187012 0.9504409432411194 1.058367490768433 1.950441002845764 1.058367490768433 1.950441002845764 2.058367729187012 0.3993892967700958 0.9508717060089111 -0.0291819088160991 0.9508717060089111 -0.0291819088160991 -0.0491282120347023 0.3993892967700958 -0.0491282120347023 1.931111574172974 1.051243424415588 1.502540111541748 1.051243424415588 1.502540111541748 0.0512433797121048 1.931111574172974 0.0512433797121048</float_array>
+          <technique_common>
+            <accessor source="#RoomShape-map1-array" count="24" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="RoomShape-map1-tangents">
+          <float_array id="RoomShape-map1-tangents-array" count="72">0 -1 0 0 -1 0 0 -1 0 0 -1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#RoomShape-map1-tangents-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="RoomShape-map1-binormals">
+          <float_array id="RoomShape-map1-binormals-array" count="72">-1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#RoomShape-map1-binormals-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="RoomShape-vertices">
+          <input semantic="POSITION" source="#RoomShape-positions"/>
+        </vertices>
+        <polylist material="Room1SG" count="6">
+          <input semantic="VERTEX" source="#RoomShape-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#RoomShape-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#RoomShape-map1" offset="2" set="0"/>
+          <input semantic="TEXTANGENT" source="#RoomShape-map1-tangents" offset="3" set="0"/>
+          <input semantic="TEXBINORMAL" source="#RoomShape-map1-binormals" offset="4" set="0"/>
+          <vcount>4 4 4 4 4 4</vcount>
+          <p>0 0 16 0 0 2 1 17 1 1 3 2 18 2 2 1 3 19 3 3 2 4 8 4 4 4 5 9 5 5 5 6 10 6 6 3 7 11 7 7 4 8 20 8 8 6 9 21 9 9 7 10 22 10 10 5 11 23 11 11 6 12 12 12 12 0 13 13 13 13 1 14 14 14 14 7 15 15 15 15 1 16 0 16 16 3 17 1 17 17 5 18 2 18 18 7 19 3 19 19 6 20 4 20 20 4 21 5 21 21 2 22 6 22 22 0 23 7 23 23</p>
+        </polylist>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="Ass_Experiment_Room">
+      <node id="Room" name="Room" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 1.481418967247009 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#RoomShape">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Room1SG" target="#Room1">
+                <bind_vertex_input semantic="TEXCOORD0" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+          <extra>
+            <technique profile="PHYRE">
+              <object_render_properties castsShadows="1" receiveShadows="1" visibleInReflections="1" visibleInRefractions="1" motionBlurEnabled="1"/>
+            </technique>
+          </extra>
+        </instance_geometry>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0.0416666679084301</start_time>
+          <end_time>8.333333015441895</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

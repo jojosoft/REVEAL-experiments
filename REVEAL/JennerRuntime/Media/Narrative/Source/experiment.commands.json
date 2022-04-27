@@ -1,0 +1,162 @@
+[
+	{
+		"comment": "The participant examined the trigger in the preparation room, hide it, start the experiment and call the controller check!",
+		"id": "experiment_preparation",
+		"commands": [
+			{
+				"time": 0.0,
+				"cmd": "freeze_player",
+				"enable": 1
+			},
+			{
+				"cmd": "try_close_logic_node",
+				"time": 0.0,
+				"id": "Experiment_Room_Trigger_Logic",
+				"duration": 0.0
+			},
+			{
+				"cmd": "start_experiment",
+				"time": 0.0
+			},
+			{
+				"cmd": "set_experiment_condition",
+				"time": 0.0,
+				"condition": "phase",
+				"value": 0
+			},
+			{
+				"cmd": "start_controller_check",
+				"time": 0.0,
+				"callbackBlock": "experiment_setup"
+			}
+		]
+	},
+	{
+		"comment": "The controller check ended successfully, transport the player to the graveyard for adaptation and choose their locomotion technique.",
+		"id": "experiment_setup",
+		"commands": [
+			{
+				"cmd": "fade_screen",
+				"time": 0.0,
+				"duration": 3.0,
+				"from": 0.0,
+				"to": 0.5
+			},
+			{
+				"cmd": "experiment_trigger",
+				"time": 5.0,
+				"trigger": "ChooseConfiguration"
+			}
+		]
+	},
+	{
+		"comment": "This block simulates the start of an experiment when an experiment save file is loaded.",
+		"id": "experiment_save_setup",
+		"commands": [
+			{
+				"cmd": "play_sound",
+				"time": 0.0,
+				"id": "sfx/objective"
+			},
+			{
+				"cmd": "start_experiment",
+				"time": 0.0
+			},
+			{
+				"cmd": "set_experiment_condition",
+				"time": 0.0,
+				"condition": "phase",
+				"value": -1
+			},
+			{
+				"cmd": "experiment_trigger",
+				"time": 0.0,
+				"trigger": "ChooseConfiguration"
+			}
+		]
+	},
+	{
+		"id": "experiment_movement_enable",
+		"commands": [
+			{
+				"cmd": "set_controller_movement",
+				"time": 0.0,
+				"enable": true
+			}
+		]
+	},
+	{
+		"id": "experiment_movement_disable",
+		"commands": [
+			{
+				"cmd": "set_controller_movement",
+				"time": 0.0,
+				"enable": false
+			}
+		]
+	},
+	{
+		"id": "experiment_take_presence_measure",
+		"commands": [
+			{
+				"cmd": "start_audio_recording",
+				"time": 0.0
+			},
+			{
+				"cmd": "play_sound",
+				"time": 0.0,
+				"id": "narr/Presence_Measurement",
+				"is_narrative": true
+			},
+			{
+				"cmd": "stop_audio_recording",
+				"time": 15.0
+			}
+		]
+	},
+	{
+		"id": "adaptation_key_comment",
+		"commands": [
+			{
+				"comment": "Played by the collection plug-in for the first inventory item!",
+				"cmd": "play_sound",
+				"time": 1.0,
+				"id": "narr/Adaptation_ItemsExplanation",
+				"is_narrative": true
+			}
+		]
+	},
+	{
+		"id": "collection1_block",
+		"commands": [
+			{
+				"cmd": "play_sound",
+				"time": 1.0,
+				"id": "sfx/drawer",
+				"is_narrative": true
+			}
+		]
+	},
+	{
+		"id": "collection2_block",
+		"commands": [
+			{
+				"cmd": "play_sound",
+				"time": 1.0,
+				"id": "sfx/drawer",
+				"is_narrative": true
+			}
+		]
+	},
+	{
+		"id": "collection3_block",
+		"commands": [
+			{
+				"cmd": "play_sound",
+				"time": 1.0,
+				"id": "sfx/drawer",
+				"is_narrative": true
+			}
+		]
+	}
+]
